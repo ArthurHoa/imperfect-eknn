@@ -26,7 +26,6 @@ k = 2
 classifier = EKNN(nb_classes, n_neighbors=k)
 classifier.fit(X_train, y_train)
 
-print(classifier.predict(X_test, return_bba=True))
 precisions = classifier.score(X_test, y_test)
 
 print("Accuracy : ", precisions)
