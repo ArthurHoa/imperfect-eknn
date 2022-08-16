@@ -9,7 +9,7 @@ The model presented here uses a computation of the gamma parameter that differs 
 
 ### Reference
 
-When using this code please refer to [Paper being published](https://github.com/ArthurHoa/imperfect_eknn/new/master?readme=1)
+When using this code please refer to [Paper being published](https://github.com/ArthurHoa/imperfect_eknn/blob/master/README.md)
 
 ### Example
 
