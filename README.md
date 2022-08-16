@@ -14,3 +14,20 @@ When using this code please cite and refer to [Paper being published](https://gi
 ### Example
 
 For k = 2, a new observation with its two nearest neighbors labeled *I think it's a dog* will be labeled *I think it's a dog*.
+
+### How to use
+
+
+Initialize the model by specifying the number of classes and the number K of neighbors :
+```
+classifier = EKNN(nb_classes, n_neighbors=k)
+```
+
+Train the model on the training set, with the attrributes X_train and the labels Y_train defined on $2^M$, with M the number of classes :
+```
+classifier.fit(X_train, y_train)
+```
+
+```
+precisions = classifier.score(X_test, y_test)
+```
