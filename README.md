@@ -17,7 +17,6 @@ For k = 2, a new observation with its two nearest neighbors labeled *I think it'
 
 ### How to use
 
-
 Initialize the model by specifying the number of classes and the number *K* of neighbors :
 ```
 classifier = EKNN(nb_classes, n_neighbors=k)
