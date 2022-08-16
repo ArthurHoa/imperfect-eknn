@@ -13,4 +13,4 @@ When using this code please refer to [Paper being published](https://github.com/
 
 ### Example
 
-For k = 2, a new observation with its two nearest neighbors labeled "I think it's a dog" will be labeled "I think it's a dog".
+For k = 2, a new observation with its two nearest neighbors labeled I think *it's a dog* will be labeled *I think it's a dog*.
