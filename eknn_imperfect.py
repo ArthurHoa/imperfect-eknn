@@ -14,8 +14,8 @@ import numpy as np
 import math
 
 # Value of the Alpha parameter
-ALPHA = 0.95
-BETA = 1.5
+ALPHA = 0.8
+BETA = 2
 
 class EKNN(BaseEstimator, ClassifierMixin):
     """
@@ -84,7 +84,7 @@ class EKNN(BaseEstimator, ClassifierMixin):
         # Compare with true labels, and compute accuracy
         return accuracy_score(y_true, y_pred)
     
-    def fit(self, X, y, alpha=ALPHA, beta=BETA, unique_gamma=True):
+    def fit(self, X, y, alpha=ALPHA, beta=BETA, unique_gamma=False):
         """
         Fit the model according to the training data.
 
@@ -342,10 +342,10 @@ class EKNN(BaseEstimator, ClassifierMixin):
             for i, x in enumerate(self.X_trained):
                 distances[i] = np.sqrt(
                     np.sum(([x] - self.X_trained)**2,axis=1)
-                ) ** self.beta
+                )
 
             mean_distance = np.sum(distances) / divider
-            return 1 / mean_distance
+            return 1 / (mean_distance  ** self.beta)
 
         # Initialize distances and divider term
         gamma = np.zeros(self.size)
@@ -384,12 +384,12 @@ class EKNN(BaseEstimator, ClassifierMixin):
             jousselm_product = np.matmul(jousselm_distances_matrix.T, jousselm_distances_matrix)
 
             # Buffer not to compute multiple times the operation
-            dividend = jousselm_product * norm_distances ** self.beta
+            dividend = jousselm_product * norm_distances
             divisor = np.sum(jousselm_product) - np.sum(np.diagonal(jousselm_product))
 
             # If Jousselme distances are nulls
             if divisor == 0:
                 divisor = 1
 
-            gamma[n] = 1 / (np.sum(dividend) / divisor)
+            gamma[n] = 1 / ((np.sum(dividend) / divisor) ** self.beta)
         return gamma
