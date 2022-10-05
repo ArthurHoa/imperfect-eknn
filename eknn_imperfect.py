@@ -32,8 +32,10 @@ class EKNN(BaseEstimator, ClassifierMixin):
 
         Parameters
         -----
+        class_number: int
+            The number of classes for the problem. Dimension of the possible classes.
         n_neighbors : int
-            number of nearest neighbors, default = 5
+            Number of nearest neighbors, default = 5
 
         Returns
         -----
