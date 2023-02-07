@@ -9,7 +9,8 @@ The model presented here uses a computation of the gamma parameter that differs 
 
 ### Reference
 
-When using this code please cite and refer to [Paper being published](https://github.com/ArthurHoa/imperfect_eknn)
+When using this code please cite and refer to the corresponding paper :  
+A. Hoarau, A. Martin, J.-C. Dubois, and Y. Le Gall, “Imperfect labels with  belief  functions  for  active  learning,”  in *Belief Functions: Theory and Applications*. Springer International Publishing, 2022.
 
 ### Example
 
