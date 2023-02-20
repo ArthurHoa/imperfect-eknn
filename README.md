@@ -89,6 +89,6 @@ m({Beagle, Foxhound}) = 0.01
 m({Beagle, Epagneul Breton}) = 0.01  
 m({Beagle, Foxhound, Epagneul Breton}) = 0.01  
 m({Beagle, Foxhound, Berger des Shetland}) = 0.03  
-m({Beagle, Basset, Foxhound, Epagneul Breton, Berger des Shetland, Corgi, Colley}) = 0.03  
+m({Beagle, Basset, Foxhound, Epagneul Breton, Berger des Shetland, Corgi, Colley}) = 0.04  
   
 True class: Beagle
