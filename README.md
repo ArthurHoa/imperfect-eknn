@@ -83,12 +83,12 @@ An exmaple of the Evidential K Nearest Neighbors prediction for the following pi
 Prediction:  
 m({Beagle}) = 0.67  
 m({Basset}) = 0.14  
-m({Berger des Shetland}) = 0.08  
+m({Shetland Sheepdog}) = 0.08  
 m({Beagle, Basset}) = 0.01  
 m({Beagle, Foxhound}) = 0.01  
-m({Beagle, Epagneul Breton}) = 0.01  
-m({Beagle, Foxhound, Epagneul Breton}) = 0.01  
-m({Beagle, Foxhound, Berger des Shetland}) = 0.03  
-m({Beagle, Basset, Foxhound, Epagneul Breton, Berger des Shetland, Corgi, Colley}) = 0.04  
+m({Beagle, Brittany}) = 0.01  
+m({Beagle, Foxhound, Brittany}) = 0.01  
+m({Beagle, Foxhound, Shetland Sheepdog}) = 0.03  
+m({Beagle, Basset, Foxhound, Brittany, Shetland Sheepdog, Welsh Corgi, Colley}) = 0.04  
   
 True class: Beagle
