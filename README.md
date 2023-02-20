@@ -76,7 +76,7 @@ Accuracy = 0.79
 
 ### Output of the model
 
-An exmaple of the Evidential Random Forest prediction for the following picture is given as follows:
+An exmaple of the Evidential K Nearest Neighbors prediction for the following picture is given as follows:
 
 <img src="https://www.dropbox.com/s/9fwx1gvev1h2iq2/234.jpg?raw=true" width="150">  
   
