@@ -37,7 +37,7 @@ precisions = classifier.score(X_test, y_test)
 
 ### Credal Dog-7
 
-Link to the dataset : [Credal Dog-4](https://github.com/ArthurHoa/credal-datasets)
+Link to the dataset : [Credal Dog-7](https://github.com/ArthurHoa/credal-datasets)
 
 Welsh Corgi | Collie | Shetland Sheepdog | Foxhound | Basset | Brittany | Beagle
 :--:|:--:|:--:|:--:|:--:|:--:|:--:
