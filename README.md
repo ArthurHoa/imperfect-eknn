@@ -19,17 +19,20 @@ For k = 2, a new observation with its two nearest neighbors labeled *I think it'
 ### How to use
 
 Initialize the model by specifying the number of classes and the number *K* of neighbors :
-```
+
+```python
 classifier = EKNN(nb_classes, n_neighbors=k)
 ```
 
 Train the model on the training set, with the attrributes *X_train* and the labels *Y_train* defined on $2^M$, M the number of classes :
-```
+
+```python
 classifier.fit(X_train, y_train)
 ```
 
 Use score to predict the classes of *X_test*, compare them to *Y_test* and return the accuracy of the model:
-```
+
+```python
 precisions = classifier.score(X_test, y_test)
 ```
 
@@ -45,7 +48,7 @@ Welsh Corgi | Collie | Shetland Sheepdog | Foxhound | Basset | Brittany | Beagle
 
 ### Code
 
-```
+```python
 from sklearn.model_selection import train_test_split
 from eknn_imperfect import EKNN
 import numpy as np
