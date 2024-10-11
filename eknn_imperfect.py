@@ -86,7 +86,7 @@ class EKNN(BaseEstimator, ClassifierMixin):
         # Compare with true labels, and compute accuracy
         return accuracy_score(y_true, y_pred)
     
-    def fit(self, X, y, alpha=ALPHA, beta=BETA, unique_gamma=False):
+    def fit(self, X, y, alpha=ALPHA, beta=BETA, unique_gamma=True):
         """
         Fit the model according to the training data.
 
